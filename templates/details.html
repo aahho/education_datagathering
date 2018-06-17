@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+		<div class="container">
+			<h2 id="name"></h2>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Courses</th>
+						<th>Highlights</th>
+						<th>Facilities</th>
+						<th>Reviews</th>
+						<th>Q&A</th>
+						<th>Gallery</th>
+						<th>Scholarship</th>
+						<th>Contacts</th>
+						<th>Fees</th>
+						<th>Admission time</th>
+						<th>Admission eligibility</th>
+					</tr>
+				</thead>
+				<tbody id="preschool_data">
+				</tbody>
+			</table>
+		</div>
+
+
+        <script src="/static/main.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				let p = window.location.pathname.split("/");
+				let school_id = p[p.length - 1];
+				getPreschoolDetails(school_id);
+			});
+		</script>
+    </body>
+</html>
+
+
