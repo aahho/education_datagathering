@@ -6,7 +6,7 @@
   "dependencies": {
     "@google/maps": "^0.4.6",
     "express": "^4.16.3",
-    "mongodb": "^3.0.10",
+    "mongodb": "^3.1.13",
     "morgan": "^1.9.0",
     "request": "^2.87.0"
   },
